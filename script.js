@@ -37,44 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//scroll color wipe
- $(function () { // wait for document ready
-        // init
-        var controller = new ScrollMagic.Controller({
-            globalSceneOptions: {
-                triggerHook: 'onLeave',
-                duration: "200%" 
-            }
-        });
-
-        // get all slides
-        var slides = document.querySelectorAll("section.panel");
-
-        // create scene for every slide
-        for (var i=0; i<slides.length; i++) {
-            new ScrollMagic.Scene({
-                    triggerElement: slides[i]
-                })
-                .setPin(slides[i], {pushFollowers: false})
-                .addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
-        }
-    });
-
-
- $(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
-
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
-    }
-  }
-});
 
