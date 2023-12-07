@@ -37,6 +37,12 @@
 }
 
 
+.myDivtwo {
+  text-align: center;
+  height: 50vh;
+}
+
+
 #mainHeader {
     text-align: center;
     padding: 10px;
@@ -281,6 +287,7 @@ section {
 
 .vids{
     padding: 45px;
+    float: center;
 }
 
 
