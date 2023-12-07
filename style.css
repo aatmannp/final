@@ -113,6 +113,7 @@ a, a:visited {
   opacity: 1;
   color: darkred;
   font-size: 25px;
+  margin-top: 25px;
 }
 
 .scrolling-text.scrolling-active {
@@ -143,7 +144,7 @@ a, a:visited {
 
 
 .med{
-    padding-left: 300px;
+    padding-left: 350px;
     padding-bottom: 10px;
     height: 400px;
     width:700px;
@@ -153,7 +154,7 @@ a, a:visited {
     float: right;
     margin-right: 30px;
     height: 400px;
-    width: 475px;
+    width: 575px;
     object-fit: cover;
     margin-top: -380px;
 
@@ -206,7 +207,45 @@ section {
 }
 
 .contain{
-    object-fit: cover;
-    overflow: hidden;
+    height: auto;
+    width: auto;
+    overflow:hidden;
+
+}
+
+.vids{
+    padding: 45px;
+}
+
+
+
+.containered .box {
+    width: auto;
+    margin: 50px;
+    display: table;
+        }
+ 
+.containered .box .box-row {
+    display: table-row;
+        }
+ 
+.containered .box .box-cell {
+    display: table-cell;
+    width: 20%;
+    padding: 10px;
+        }
+ 
+.containered .box .box-cell.box1 {
+    text-align: justify;
+        }
+ 
+.containered .box .box-cell.box2 {
+    text-align: justify
+        }
+}
+
+
+.side{
     
 }
+
