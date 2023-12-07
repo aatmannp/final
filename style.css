@@ -1,0 +1,212 @@
+.index {
+    font-family: "Georgia";
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+    background-image: url("newsssp.png");
+    background-size: contain;
+    height: 200%; 
+    background-repeat: no-repeat;
+}
+
+.pages{
+    font-family: "Georgia";
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+
+}
+
+
+
+.header{
+    font-size: 50px;
+    color: black;
+    text-align: right;
+    margin-right: 300px;
+    margin-bottom: -50px;
+    margin-top: 150px;
+}
+
+
+.headerTwo{
+    font-size: 250px;
+    text-align: center;
+    font-family: "Snell Roundhand";
+    letter-spacing: 10px;
+    margin-left: auto;
+    margin-top: auto ;
+    margin-bottom: auto;
+    color: midnightblue;
+}
+
+
+.pageHead{
+    font-size: 150px;
+    text-align: left;
+    font-family: "Snell Roundhand";
+    margin-left: 30px;
+    margin-top: 50px ;
+    margin-bottom: auto;
+    color: midnightblue;
+    overflow: visible;
+
+}
+
+.headerTh{
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: -15px;
+}
+
+.tabs{
+  font-family: "Georgia";
+  font-size: 20px;
+  word-spacing: 15px;
+  color: black;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.tabs a:hover {
+  color: darkblue;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none ;
+}
+
+.imgplace{
+    height: 50%;
+    width: auto;
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.recommendation-box {
+    margin-top: 10px;
+    text-align: center;
+    color: midnightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  white-space: nowrap; 
+  margin-top: 175px;
+  overflow: hidden; /* helps hide the extra text outside the window "overflow" */
+}
+
+.scrolling-text {
+  display: inline-block;
+  transform: translateX(0); /* set initial position to prevent animation on page load */
+  opacity: 1;
+  color: darkred;
+  font-size: 25px;
+}
+
+.scrolling-text.scrolling-active {
+  transform: translateX(-20%);
+  opacity: 1;
+}
+
+@keyframes scrollText {
+  to {
+    transform: translateX(-20%);
+  }
+}
+
+.container[data-speed] .scrolling-text {
+  animation: scrollText var(--duration) linear infinite;
+  --duration: calc(100s / var(--speed, 10)); /* calculate duration based on speed */
+}
+
+.left-to-right[data-speed] .scrolling-text {
+  animation-direction: reverse; /* reverse animation direction */
+}
+
+.smallLogo{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -45px;
+}
+
+
+.med{
+    padding-left: 300px;
+    padding-bottom: 10px;
+    height: 400px;
+    width:700px;
+}
+
+.fade{
+    float: right;
+    margin-right: 30px;
+    height: 400px;
+    width: 475px;
+    object-fit: cover;
+    margin-top: -380px;
+
+}
+
+.fade-in-image { 
+    animation: fadeIn 5s;
+     }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+section {
+  height: auto;
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.red {
+  background-color: darkred;
+}
+
+.black{
+    background-color: black;
+}
+
+
+.headlines{
+    text-align: center;
+    padding: 30px
+
+}
+
+.contain{
+    object-fit: cover;
+    overflow: hidden;
+    
+}
