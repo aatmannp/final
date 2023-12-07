@@ -423,3 +423,11 @@ img {
 .fit{
     object-fit: cover;
 }
+
+
+.description{
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
