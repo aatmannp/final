@@ -218,6 +218,7 @@ a{
     padding-bottom: 10px;
     height: 400px;
     width:700px;
+    object-fit: cover;
 }
 
 .fade{
@@ -362,7 +363,14 @@ section {
 .image-container {
     position: relative;
     overflow: hidden;
+    margin-left: 30px;
 }
+
+
+.image-container{
+    background-color: darkred;
+}
+
 
 img {
     width: 100%;
@@ -409,4 +417,9 @@ img {
   font-size: 70px;
   margin-bottom: 0px;
   background-color: rgba(0, 232, 103, 0.2);
+}
+
+
+.fit{
+    object-fit: cover;
 }
